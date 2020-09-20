@@ -1,0 +1,2 @@
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.DataAccess\obj\Debug\netcoreapp2.1\ForumNineNine.DataAccess.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.DataAccess\obj\Debug\netcoreapp2.1\ForumNineNine.DataAccess.AssemblyInfo.cs

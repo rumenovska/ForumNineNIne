@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumNineNine", "ForumNineNine\ForumNineNine.csproj", "{AD62CE4E-75D5-403A-9E6C-AFC7FA5153FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumNineNine.DataAccess", "ForumNineNine.DataAccess\ForumNineNine.DataAccess.csproj", "{65A6D52E-1135-49EE-8EB5-1B6EFDB2FF75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD62CE4E-75D5-403A-9E6C-AFC7FA5153FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD62CE4E-75D5-403A-9E6C-AFC7FA5153FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD62CE4E-75D5-403A-9E6C-AFC7FA5153FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD62CE4E-75D5-403A-9E6C-AFC7FA5153FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A6D52E-1135-49EE-8EB5-1B6EFDB2FF75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A6D52E-1135-49EE-8EB5-1B6EFDB2FF75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A6D52E-1135-49EE-8EB5-1B6EFDB2FF75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A6D52E-1135-49EE-8EB5-1B6EFDB2FF75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62982DC7-CBEB-4E1F-B109-EA4D3AD16D46}
+	EndGlobalSection
+EndGlobal
