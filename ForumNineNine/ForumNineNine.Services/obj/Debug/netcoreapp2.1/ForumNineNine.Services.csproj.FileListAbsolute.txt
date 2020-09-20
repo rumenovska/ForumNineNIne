@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.csprojAssemblyReference.cache
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.AssemblyInfo.cs
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\bin\Debug\netcoreapp2.1\ForumNineNine.Services.deps.json
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\bin\Debug\netcoreapp2.1\ForumNineNine.Services.dll
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\bin\Debug\netcoreapp2.1\ForumNineNine.Services.pdb
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\bin\Debug\netcoreapp2.1\ForumNineNine.DataAccess.dll
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\bin\Debug\netcoreapp2.1\ForumNineNine.DataAccess.pdb
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.csproj.CopyComplete
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.dll
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.pdb

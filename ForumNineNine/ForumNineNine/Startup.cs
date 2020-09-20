@@ -12,6 +12,8 @@ using Microsoft.EntityFrameworkCore;
 using ForumNineNine.DataAccess;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ForumNineNine.DataAccess.Interfaces;
+using ForumNineNine.Services;
 
 namespace ForumNineNine
 {
@@ -40,6 +42,7 @@ namespace ForumNineNine
             services.AddDefaultIdentity<IdentityUser>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+            services.AddTransient<IForum, ForumService>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 

@@ -11,9 +11,9 @@ namespace ForumNineNine.DataAccess
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options){ }
 
-        DbSet<Forum> Forums { get; set; }
-        DbSet<Post> Posts { get; set; }
-        DbSet<PostReply> Replies { get; set; }
+        public DbSet<Forum> Forums { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<PostReply> Replies { get; set; }
 
     }
 }
