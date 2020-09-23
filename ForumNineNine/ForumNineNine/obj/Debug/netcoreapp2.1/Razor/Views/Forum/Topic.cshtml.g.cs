@@ -88,7 +88,7 @@ using ForumNineNine.WebModels.AccountViewModels;
             WriteLiteral(" Forum!</h2>\r\n<span id=\"headingBtn\">");
             EndContext();
             BeginContext(139, 120, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4246a6494b4149a3bd9545915fdeeee2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b6cfc471332c4cd795b10f1eaf1b629f", async() => {
                 BeginContext(244, 11, true);
                 WriteLiteral("Create Post");
                 EndContext();
@@ -144,7 +144,7 @@ using ForumNineNine.WebModels.AccountViewModels;
             WriteLiteral("                <tr>\r\n                    <td>\r\n                        ");
             EndContext();
             BeginContext(504, 143, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b56cd7e48f3496bbff42e71bd26e2ca", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "35c4dbb152a44380960dbd0f7cbe8b31", async() => {
                 BeginContext(576, 30, true);
                 WriteLiteral("\r\n                            ");
                 EndContext();
@@ -249,7 +249,7 @@ else
             WriteLiteral(" posts yet. <br />\r\n            Why not\r\n            ");
             EndContext();
             BeginContext(1078, 136, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4eea41b7b23a474bafe8729c97459bad", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd58d538943049f5b5d554b416ee54f7", async() => {
                 BeginContext(1159, 51, true);
                 WriteLiteral("\r\n                <span>create</span>\r\n            ");
                 EndContext();

@@ -79,7 +79,7 @@ using ForumNineNine.WebModels.AccountViewModels;
             WriteLiteral("            <tr>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(232, 138, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "be7017c660974a50ba7421c6a29a2569", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "77d18d0bc96d4d26b125829b1ef8b345", async() => {
                 BeginContext(307, 26, true);
                 WriteLiteral("\r\n                        ");
                 EndContext();
