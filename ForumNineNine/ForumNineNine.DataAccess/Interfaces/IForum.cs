@@ -16,7 +16,6 @@ namespace ForumNineNine.DataAccess.Interfaces
         Task Delete(int forumId);
         Task UpdateForumTitle(int forumId, string newTitle);
         Task UpdateForumDescription(int forumId, string newDesc);
-
-
+        IEnumerable<Forum> GetLatestForums(int n);
     }
 }

@@ -48,6 +48,11 @@ namespace ForumNineNine.Services
                 .FirstOrDefault();
         }
 
+        public IEnumerable<Forum> GetLatestForums(int n)
+        {
+            return GetAll().OrderByDescending(f => f.Posts.Count()).Take(n);
+        }
+
         public Task UpdateForumDescription(int forumId, string newDesc)
         {
             throw new NotImplementedException();

@@ -28,7 +28,7 @@ namespace ForumNineNine.Controllers
             if (ModelState.IsValid)
             {
                 _userService.Login(model);
-                return RedirectToAction("Index", "Forum");
+                return RedirectToAction("Index", "Home");
             }
             return View(model);
         }
@@ -44,14 +44,14 @@ namespace ForumNineNine.Controllers
             if (ModelState.IsValid)
             {
                 _userService.Register(model);
-                return RedirectToAction("Index", "Forum");
+                return RedirectToAction("Index", "Home");
             }
             return View(model);
         }
         public IActionResult Logout()
         {
             _userService.Logout();
-            return RedirectToAction("Index", "Forum");
+            return RedirectToAction("Index", "Home");
         }
 
     }

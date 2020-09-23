@@ -27,9 +27,11 @@ namespace ForumNineNine.Controllers
             {
                  Id= f.Id,
                  Name = f.Title,
-                 Description = f.Description
+                 Description = f.Description,
+                 PostsCount = f.Posts.Count()
+                 
             });
-
+            
             var model = new ForumIndexModel
             {
                 ForumList = forums

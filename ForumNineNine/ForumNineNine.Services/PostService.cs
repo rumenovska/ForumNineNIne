@@ -35,7 +35,11 @@ namespace ForumNineNine.Services
 
         public IEnumerable<Post> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.Posts
+                .Include(p => p.User)
+                .Include(p => p.Forum)
+                .Include(p => p.Replies)
+                    .ThenInclude(r => r.User);
         }
 
         public Post GetById(int id)
@@ -56,6 +60,11 @@ namespace ForumNineNine.Services
         public IEnumerable<Post> GetForumPosts(int forumId)
         {
             return _context.Forums.FirstOrDefault(f => f.Id == forumId).Posts;
+        }
+
+        public IEnumerable<Post> GetLatestPosts(int n)
+        {
+            return GetAll().OrderByDescending(p => p.Created).Take(n);
         }
     }
 }

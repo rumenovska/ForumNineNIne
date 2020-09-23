@@ -28,15 +28,18 @@ namespace ForumNineNine.Controllers
             var replies = RepliesMapper(post.Replies);
             var model = new PostIndexModel
             {
-                Id= post.Id,
-                Title= post.Title,
+                Id = post.Id,
+                Title = post.Title,
                 AuthorId = post.User.Id,
-                AuthorName= post.User.UserName,
-                AuthorImageUrl= post.User.ProfileImageUrl,
-                AuthorRating= post.User.Rating,
-                Created= post.Created,
-                PostContent= post.Content,
-                Replies = replies
+                AuthorName = post.User.UserName,
+                AuthorImageUrl = post.User.ProfileImageUrl,
+                AuthorRating = post.User.Rating,
+                Created = post.Created,
+                PostContent = post.Content,
+                Replies = replies,
+                ForumName = post.Forum.Title,
+                ForumId = post.Forum.Id,
+                IsAuthorAdmin = _userManager.GetRolesAsync(post.User).Result.Contains("Admin")
             };
             return View(model);
         }
@@ -79,7 +82,8 @@ namespace ForumNineNine.Controllers
                 AuthorImageUrl = r.User.ProfileImageUrl,
                 AuthorRating = r.User.Rating,
                 Created = r.Created,
-                ReplyContent= r.Content
+                ReplyContent= r.Content,
+                IsAuthorAdmin= _userManager.GetRolesAsync(r.User).Result.Contains("Admin")
             });
         }
     }
