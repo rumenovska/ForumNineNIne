@@ -39,13 +39,13 @@ namespace ForumNineNine.Services
 
         public Forum GetById(int id)
         {
-            return _context.Forums
+            return _context.Forums.Where(p=> p.Id == id)
                 .Include(f=> f.Posts)
                    .ThenInclude(p=> p.User)
                 .Include(f => f.Posts)
                     .ThenInclude(p => p.Replies)
                         .ThenInclude(r=> r.User)    
-                .FirstOrDefault(f => f.Id == id);
+                .FirstOrDefault();
         }
 
         public Task UpdateForumDescription(int forumId, string newDesc)

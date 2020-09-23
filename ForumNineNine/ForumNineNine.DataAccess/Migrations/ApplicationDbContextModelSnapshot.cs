@@ -262,6 +262,14 @@ namespace ForumNineNine.DataAccess.Migrations
 
                     b.Property<string>("FullName");
 
+                    b.Property<bool>("IsActive");
+
+                    b.Property<DateTime>("MemberSince");
+
+                    b.Property<string>("ProfileImageUrl");
+
+                    b.Property<int>("Rating");
+
                     b.ToTable("User");
 
                     b.HasDiscriminator().HasValue("User");

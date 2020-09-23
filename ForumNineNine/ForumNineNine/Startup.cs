@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ForumNineNine.DataAccess.Interfaces;
 using ForumNineNine.Services;
+using ForumNineNine.DataAccess.DomainModels;
 
 namespace ForumNineNine
 {
@@ -39,10 +40,20 @@ namespace ForumNineNine
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
+
+
+            services.AddIdentity<User, IdentityRole>(options => {
+                options.User.RequireUniqueEmail = false;
+                options.Password.RequireNonAlphanumeric = false;
+            })
+                .AddRoleManager<RoleManager<IdentityRole>>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddTransient<IForum, ForumService>();
+            services.AddTransient<IPost, PostService>();
+            services.AddTransient<IUserService, UserService>();
+
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
@@ -70,7 +81,7 @@ namespace ForumNineNine
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Forum}/{action=Index}/{id?}");
             });
         }
     }

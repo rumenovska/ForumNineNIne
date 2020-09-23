@@ -5257,6 +5257,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
+          "ForumNineNine.WebModels": "1.0.0",
           "Microsoft.AspNetCore.All": "2.1.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore": "2.1.1"
@@ -5266,6 +5267,16 @@
         },
         "runtime": {
           "bin/placeholder/ForumNineNine.DataAccess.dll": {}
+        }
+      },
+      "ForumNineNine.WebModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/ForumNineNine.WebModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ForumNineNine.WebModels.dll": {}
         }
       }
     }
@@ -14033,6 +14044,11 @@
       "type": "project",
       "path": "../ForumNineNine.DataAccess/ForumNineNine.DataAccess.csproj",
       "msbuildProject": "../ForumNineNine.DataAccess/ForumNineNine.DataAccess.csproj"
+    },
+    "ForumNineNine.WebModels/1.0.0": {
+      "type": "project",
+      "path": "../ForumNineNine.WebModels/ForumNineNine.WebModels.csproj",
+      "msbuildProject": "../ForumNineNine.WebModels/ForumNineNine.WebModels.csproj"
     }
   },
   "projectFileDependencyGroups": {

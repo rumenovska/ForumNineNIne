@@ -10,3 +10,6 @@ C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.DataAccess
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.DataAccess\obj\Debug\netcoreapp2.1\ForumNineNine.DataAccess.dll
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.DataAccess\obj\Debug\netcoreapp2.1\ForumNineNine.DataAccess.pdb
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.DataAccess\obj\Debug\netcoreapp2.1\ForumNineNine.DataAccess.genruntimeconfig.cache
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.DataAccess\bin\Debug\netcoreapp2.1\ForumNineNine.WebModels.dll
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.DataAccess\bin\Debug\netcoreapp2.1\ForumNineNine.WebModels.pdb
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.DataAccess\obj\Debug\netcoreapp2.1\ForumNineNine.DataAccess.csproj.CopyComplete

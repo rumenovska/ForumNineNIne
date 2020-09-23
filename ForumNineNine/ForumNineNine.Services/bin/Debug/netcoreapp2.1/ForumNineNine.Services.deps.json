@@ -3883,12 +3883,18 @@
       },
       "ForumNineNine.DataAccess/1.0.0": {
         "dependencies": {
+          "ForumNineNine.WebModels": "1.0.0",
           "Microsoft.AspNetCore.All": "2.1.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore": "2.1.1"
         },
         "runtime": {
           "ForumNineNine.DataAccess.dll": {}
+        }
+      },
+      "ForumNineNine.WebModels/1.0.0": {
+        "runtime": {
+          "ForumNineNine.WebModels.dll": {}
         }
       }
     }
@@ -6119,6 +6125,11 @@
       "hashPath": "windowsazure.storage.8.1.4.nupkg.sha512"
     },
     "ForumNineNine.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ForumNineNine.WebModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

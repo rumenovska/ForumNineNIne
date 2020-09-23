@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "ForumNineNine.WebModels/1.0.0": {
+        "runtime": {
+          "ForumNineNine.WebModels.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ForumNineNine.WebModels/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

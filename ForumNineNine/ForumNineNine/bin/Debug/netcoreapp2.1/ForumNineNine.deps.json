@@ -1396,6 +1396,7 @@
       },
       "ForumNineNine.DataAccess/1.0.0": {
         "dependencies": {
+          "ForumNineNine.WebModels": "1.0.0",
           "Microsoft.AspNetCore.All": "2.1.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.1",
           "Microsoft.EntityFrameworkCore": "2.1.1"
@@ -1416,6 +1417,14 @@
         },
         "compile": {
           "ForumNineNine.Services.dll": {}
+        }
+      },
+      "ForumNineNine.WebModels/1.0.0": {
+        "runtime": {
+          "ForumNineNine.WebModels.dll": {}
+        },
+        "compile": {
+          "ForumNineNine.WebModels.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -5021,6 +5030,11 @@
       "sha512": ""
     },
     "ForumNineNine.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ForumNineNine.WebModels/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

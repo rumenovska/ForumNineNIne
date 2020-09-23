@@ -5257,6 +5257,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "ForumNineNine.WebModels/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/ForumNineNine.WebModels.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ForumNineNine.WebModels.dll": {}
+        }
       }
     }
   },
@@ -14018,10 +14028,16 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "ForumNineNine.WebModels/1.0.0": {
+      "type": "project",
+      "path": "../ForumNineNine.WebModels/ForumNineNine.WebModels.csproj",
+      "msbuildProject": "../ForumNineNine.WebModels/ForumNineNine.WebModels.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "ForumNineNine.WebModels >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.1.1",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 2.1.1",
       "Microsoft.EntityFrameworkCore >= 2.1.1",
@@ -14053,7 +14069,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\Desktop\\repos\\ForumNineNIne\\ForumNineNine\\ForumNineNine.WebModels\\ForumNineNine.WebModels.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\repos\\ForumNineNIne\\ForumNineNine\\ForumNineNine.WebModels\\ForumNineNine.WebModels.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -10,3 +10,5 @@ C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\b
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.csproj.CopyComplete
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.dll
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\obj\Debug\netcoreapp2.1\ForumNineNine.Services.pdb
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\bin\Debug\netcoreapp2.1\ForumNineNine.WebModels.dll
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.Services\bin\Debug\netcoreapp2.1\ForumNineNine.WebModels.pdb
