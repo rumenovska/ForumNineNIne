@@ -39,10 +39,10 @@ namespace ForumNineNine.Controllers
             return View(model);
         }
 
-        public IActionResult Topic(int forumId)
+        public IActionResult Topic(int forumId, string searchQuery)
         {
             var forum = _forumService.GetById(forumId);
-            var posts = _postService.GetForumPosts(forumId);
+            var posts = _postService.GetSearchedPosts(forum, searchQuery);
 
             var postViewModels = posts.Select(post => new PostViewModel
             {
@@ -63,6 +63,11 @@ namespace ForumNineNine.Controllers
 
             return View(model);
 
+        }
+        [HttpPost]
+        public IActionResult Search(int forumId, string searchQuery)
+        {
+            return RedirectToAction("Topic", new { forumId, searchQuery });
         }
 
         private ForumViewModel ForumViewModelMapper(Forum forum)

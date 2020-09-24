@@ -3,7 +3,7 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     padding: 50px 0 20px 0;
     background-color: #EEE;
-    background-image: url("/images/theme/bg-01.jpg");
+    background-image: url("/images/theme/bg-01.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -25,7 +25,7 @@ body {
     background-color: rgba(0,0,0,0.9);
     padding: 8px 24px 24px;
 }
-.sectonHeading{
+.sectionHeading{
     color: white;
     font-size: 1.3em;
     font-family: Roboto;
@@ -101,6 +101,21 @@ body {
     color: #333;
     margin: 4px 0 16px 0;
 }
+/*Custom Topic Page Styles*/
+.searchBar {
+    padding: 3px 5px 2px 12px;
+    margin: 8px;
+    background-color: #333;
+    width: 10%;
+    transition: ease 0.3s;
+    border: none;
+}
+
+    .searchBar:focus {
+        color: black;
+        width: 60%;
+        background-color: #fff;
+    }
 /*Custom post style*/
 .postTitle {
     font-family: Roboto;
@@ -299,6 +314,12 @@ body {
         background-color: #00897B !important;
         color: #fff !important;
     }
+.btn-forumSearch{
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+}
 
 /* Wrapping element */
 /* Set some basic padding to keep content from hitting the edges */

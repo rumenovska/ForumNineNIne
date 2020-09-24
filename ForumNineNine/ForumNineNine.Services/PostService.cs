@@ -66,5 +66,12 @@ namespace ForumNineNine.Services
         {
             return GetAll().OrderByDescending(p => p.Created).Take(n);
         }
+
+        public IEnumerable<Post> GetSearchedPosts(Forum forum, string searchQuery)
+        {
+            
+            return string.IsNullOrEmpty(searchQuery) ? forum.Posts
+                : forum.Posts.Where(post => post.Title.Contains(searchQuery) || post.Content.Contains(searchQuery));
+        }
     }
 }

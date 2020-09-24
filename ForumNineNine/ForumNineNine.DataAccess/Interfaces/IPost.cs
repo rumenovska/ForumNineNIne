@@ -16,6 +16,6 @@ namespace ForumNineNine.DataAccess.Interfaces
         Task Add(Post post);
         Task Delete(int id);
         Task EditPostContent(int id, string newContent);
-        
+        IEnumerable<Post> GetSearchedPosts(Forum forum, string searchQuery);
     }
 }

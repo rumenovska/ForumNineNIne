@@ -88,12 +88,12 @@ using ForumNineNine.WebModels.AccountViewModels;
                 ");
             EndContext();
             BeginContext(370, 198, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc1a72bf3b6d4c55a857121778da1efc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2420b28990ed402586fb28696ad705fe", async() => {
                 BeginContext(434, 22, true);
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(456, 87, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "bae7d295cf8a440e918af4ab42a07e0d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3915beb1136a4061b39566575dfa182b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -165,7 +165,7 @@ WriteAttributeValue("", 1031, p.Forum.ImageUrl, 1031, 17, false);
             WriteLiteral("></div>\r\n                            <div class=\"postTitle\">\r\n                                ");
             EndContext();
             BeginContext(1167, 153, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "26823b089f914eedb15c23ec06a32009", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3242e7989e0a453b9b1a2ec806dbc6ff", async() => {
                 BeginContext(1236, 38, true);
                 WriteLiteral("\r\n                                    ");
                 EndContext();
@@ -276,7 +276,7 @@ WriteAttributeValue("", 1031, p.Forum.ImageUrl, 1031, 17, false);
             WriteLiteral("                                <span class=\"postUser\">\r\n                                    ");
             EndContext();
             BeginContext(2080, 258, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "374b89dcd2ef438a867931fe4197eea6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a0ed55c7302456cbc2de281e6cf7d05", async() => {
                 BeginContext(2239, 44, true);
                 WriteLiteral("\r\n\r\n                                        ");
                 EndContext();
