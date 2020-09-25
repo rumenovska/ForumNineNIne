@@ -1,4 +1,4 @@
-﻿@model  ProfileModel
+﻿@model ProfileModel
 
 <div class="container body-content">
     <div class="row sectionHeader">
@@ -13,11 +13,11 @@
             {
                 <form method="post" enctype="multipart/form-data" asp-controller="Profile" asp-action="UploadProfileImage">
                     <div id="upload">
-                        <label class="btn btn-default btn-file">
-                            Browse <input type="file" name="file" style="display: none" />
+                        <label class="btn btn-default btn-file photoUploader">
+                            <div id="browse">Browse</div> <input type="file" name="file" style="display: none" class="fileName" />
                         </label>
                     </div>
-                    <button type="submit" id="btn-profle" class="btn btn-default">Submit</button>
+                    <button type="submit" id="btn-profile" class="btn btn-default">Submit</button>
                 </form>
             }
         </div>
@@ -32,7 +32,17 @@
             <span id="userCreatedLabel">Member Since: @Model.MemeberSince.ToString("dd/MM/yyyy")</span>
         </div>
     </div>
-    
+
 </div>
 
-
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('.photoUploader').on("change", function () {
+                var fileName = $('.fileName').val().split('\\').pop();;
+                $('#browse').html(fileName);
+                
+            });
+        });
+    </script>
+}
