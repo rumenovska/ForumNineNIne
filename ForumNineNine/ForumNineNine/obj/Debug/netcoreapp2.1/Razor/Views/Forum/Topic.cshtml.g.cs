@@ -111,7 +111,7 @@ using ForumNineNine.Models.SearchViewModels;
             WriteLiteral("                <span id=\"headingBtn\">\r\n                    ");
             EndContext();
             BeginContext(313, 120, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "295758f989b44c10b3d6f44fa95d34ba", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79bf5bcc7fbc449bb66e79cb7531cae8", async() => {
                 BeginContext(418, 11, true);
                 WriteLiteral("Create Post");
                 EndContext();
@@ -157,12 +157,12 @@ using ForumNineNine.Models.SearchViewModels;
             WriteLiteral("            ");
             EndContext();
             BeginContext(487, 517, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b82e56163f06483790d73553367a0781", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34484d9cd88540c797d54dcede3df4d8", async() => {
                 BeginContext(550, 65, true);
                 WriteLiteral("\r\n                <div class=\"searchForum\">\r\n                    ");
                 EndContext();
                 BeginContext(615, 111, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "79f7c65232fb455bac6f97f2574d86ba", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "855646efc0484b6f806a5a1e59df787b", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -190,7 +190,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n                    <button type=\"submit\" class=\"btn btn-forumSearch\">\r\n                        <i class=\"material-icons\">search</i>\r\n                    </button>\r\n                </div>\r\n                ");
                 EndContext();
                 BeginContext(933, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "41641f9a32e94134b67867b44200b2d9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d8f063f8ce1241f9a7229ba08d023d76", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -272,7 +272,7 @@ WriteAttributeValue("", 1127, Model.Forum.ImageUrl, 1127, 21, false);
             WriteLiteral("                <p>\r\n                    <span>\r\n                        You must be a\r\n                        ");
             EndContext();
             BeginContext(1436, 127, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2dfad04ac836478e8b8b3ffd6ff16543", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "641b8640ef854875866c725b4b320bea", async() => {
                 BeginContext(1486, 73, true);
                 WriteLiteral("\r\n                            registered member\r\n                        ");
                 EndContext();
@@ -322,7 +322,7 @@ WriteAttributeValue("", 1127, Model.Forum.ImageUrl, 1127, 21, false);
             WriteLiteral("                        <tr>\r\n                            <td>\r\n                                <div class=\"postData\">\r\n                                    <div class=\"postTitle\">\r\n                                        ");
             EndContext();
             BeginContext(2198, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e1ac8743d4d646a4a0a1cb34249a7a0e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e74d295a2fdf4d468b290ea4c3088e12", async() => {
                 BeginContext(2271, 10, false);
 #line 51 "C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\Views\Forum\Topic.cshtml"
                                                                                                            Write(post.Title);
@@ -368,7 +368,7 @@ WriteAttributeValue("", 1127, Model.Forum.ImageUrl, 1127, 21, false);
                                                 ");
             EndContext();
             BeginContext(2562, 208, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7f0b47a968704f1d94ff1ae14d1412e0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "467f21f82a84471481a8371b1518d5fb", async() => {
                 BeginContext(2646, 54, true);
                 WriteLiteral("\r\n                                                    ");
                 EndContext();
@@ -480,7 +480,7 @@ WriteAttributeValue("", 1127, Model.Forum.ImageUrl, 1127, 21, false);
             WriteLiteral("            <div class=\"noPosts\">\r\n                <i class=\"material-icons md-72\">qustion_answer</i>\r\n                <h3>\r\n                    It looks like there are no posts to be found.\r\n                    Why not\r\n                    ");
             EndContext();
             BeginContext(3915, 150, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2d8dc75a6ab649419d7cc7091efbd3ee", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "02051618ee0641c08a0fb87003e23a31", async() => {
                 BeginContext(3996, 65, true);
                 WriteLiteral("\r\n                        <span>Post</span>\r\n                    ");
                 EndContext();

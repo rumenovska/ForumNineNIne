@@ -91,7 +91,7 @@ using ForumNineNine.Models.SearchViewModels;
             WriteLiteral("\r\n            </span>\r\n            <span id=\"headingBtn\"> ");
             EndContext();
             BeginContext(261, 129, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9192a74640c74ba0b4f1aa2c0a49affa", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "197a99cfcb9e44b089443189fcafcbb6", async() => {
                 BeginContext(362, 8, true);
                 WriteLiteral("Back to ");
                 EndContext();
@@ -148,7 +148,7 @@ WriteAttributeValue("", 595, Model.AuthorImageUrl, 595, 21, false);
             WriteLiteral("></div>\r\n            ");
             EndContext();
             BeginContext(640, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b73bd034b5954f3dab3221944217c89a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "024cd7b5cdec4fb783366a11d54271de", async() => {
                 BeginContext(724, 16, false);
 #line 16 "C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\Views\Post\Index.cshtml"
                                                                                           Write(Model.AuthorName);
@@ -235,7 +235,7 @@ WriteAttributeValue("", 595, Model.AuthorImageUrl, 595, 21, false);
             WriteLiteral("        <div class=\"row\">\r\n            <span>");
             EndContext();
             BeginContext(1297, 114, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c35d375c7ed42aebb03fbccdf6c6cf3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ba5983cd32441fcb64f3f6f8a2f57ea", async() => {
                 BeginContext(1397, 10, true);
                 WriteLiteral("Post Reply");
                 EndContext();
@@ -304,7 +304,7 @@ WriteAttributeValue("", 1720, reply.AuthorImageUrl, 1720, 21, false);
             WriteLiteral("></div>\r\n                    ");
             EndContext();
             BeginContext(1772, 154, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fcdca854ce964aaaa97a342552950937", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c68b39ce92a54567aa20bfbd240411af", async() => {
                 BeginContext(1857, 26, true);
                 WriteLiteral("\r\n                        ");
                 EndContext();
