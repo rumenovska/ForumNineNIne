@@ -49,3 +49,4 @@ C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\bin\Debug\
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\bin\Debug\netcoreapp2.1\ForumNineNine.WebModels.pdb
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Search\Results.cshtml.g.cs

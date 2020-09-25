@@ -33,6 +33,11 @@ namespace ForumNineNine.Services
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Post> FromAllSearchedPosts(string searchQuery)
+        {
+            return GetAll().Where(post => post.Title.Contains(searchQuery) || post.Content.Contains(searchQuery));
+        }
+
         public IEnumerable<Post> GetAll()
         {
             return _context.Posts
