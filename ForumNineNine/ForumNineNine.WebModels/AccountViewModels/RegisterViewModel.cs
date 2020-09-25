@@ -13,5 +13,7 @@ namespace ForumNineNine.WebModels.AccountViewModels
         public string Password { get; set; }
         [Required(ErrorMessage = "Please confirm your password")]
         public string ConfirmPassword { get; set; }
+
+        
     }
 }

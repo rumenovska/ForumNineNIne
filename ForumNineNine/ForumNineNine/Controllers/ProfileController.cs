@@ -35,7 +35,7 @@ namespace ForumNineNine.Controllers
                 Email = user.Email,
                 ProfileImageUrl = user.ProfileImageUrl,
                 MemeberSince = user.MemberSince,
-                IsAdmin = _userManager.IsInRoleAsync(user, "Admin").Result
+                IsAdmin = _userManager.IsInRoleAsync(user, "admin").Result
             };
 
             return View(model);

@@ -43,8 +43,13 @@ using ForumNineNine.Models.SearchViewModels;
 
 #line default
 #line hidden
+#line 7 "C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"962eeb108598c254fe57174a7aca51f8808aac57", @"/Views/Search/Results.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"35582cf23656b9dc2fe043caf59fb61cddc2b4f8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2479ea31a3a217370b5d0a8039046ab404b8b449", @"/Views/_ViewImports.cshtml")]
     public class Views_Search_Results : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<SearchResultModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("type", "text", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -99,12 +104,12 @@ using ForumNineNine.Models.SearchViewModels;
             WriteLiteral("</span>\r\n\r\n            ");
             EndContext();
             BeginContext(220, 450, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7e755aa3e19748a39a7a22414207b8d8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cf86b83eb69a472693d5da57595f9db0", async() => {
                 BeginContext(284, 65, true);
                 WriteLiteral("\r\n                <div class=\"searchForum\">\r\n                    ");
                 EndContext();
                 BeginContext(349, 111, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3b57dba38e7e401a8d820a4493f288e1", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e7288ee37c0149c1a4a925e21e040000", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -173,7 +178,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
             WriteLiteral("                        <tr>\r\n                            <td>\r\n                                <div class=\"postData\">\r\n                                    <div class=\"postTitle\">\r\n                                        ");
             EndContext();
             BeginContext(1209, 87, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "885195c8047b40c0952bae3667652a06", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "91a2240d509f4490a791e41922fa6843", async() => {
                 BeginContext(1282, 10, false);
 #line 30 "C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\Views\Search\Results.cshtml"
                                                                                                            Write(post.Title);
@@ -220,7 +225,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                                                 ");
             EndContext();
             BeginContext(1622, 208, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "006d249308d44f22b7d9dcddcda34fa3", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "893abbf8afad4b00ba2ed0fbfabfe3ed", async() => {
                 BeginContext(1706, 54, true);
                 WriteLiteral("\r\n                                                    ");
                 EndContext();
@@ -277,7 +282,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
             WriteLiteral(")\r\n                                            </span>\r\n                                            in:\r\n                                            <span class=\"postForum\">\r\n                                                ");
             EndContext();
             BeginContext(2122, 100, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "70aa01ee1e8d4f24aed5f73fedd767fe", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "516b253240eb401a89090eceb99d57a6", async() => {
                 BeginContext(2203, 15, false);
 #line 43 "C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\Views\Search\Results.cshtml"
                                                                                                                            Write(post.Forum.Name);

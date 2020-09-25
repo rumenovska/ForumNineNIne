@@ -43,8 +43,13 @@ using ForumNineNine.Models.SearchViewModels;
 
 #line default
 #line hidden
+#line 7 "C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5b76f25892c92c3f49620e2481d50a8b8356c434", @"/Views/Post/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"35582cf23656b9dc2fe043caf59fb61cddc2b4f8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2479ea31a3a217370b5d0a8039046ab404b8b449", @"/Views/_ViewImports.cshtml")]
     public class Views_Post_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PostIndexModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Forum", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -91,7 +96,7 @@ using ForumNineNine.Models.SearchViewModels;
             WriteLiteral("\r\n            </span>\r\n            <span id=\"headingBtn\"> ");
             EndContext();
             BeginContext(261, 129, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "197a99cfcb9e44b089443189fcafcbb6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1bd200fcefbd4ad592d7877014fa4ee2", async() => {
                 BeginContext(362, 8, true);
                 WriteLiteral("Back to ");
                 EndContext();
@@ -148,7 +153,7 @@ WriteAttributeValue("", 595, Model.AuthorImageUrl, 595, 21, false);
             WriteLiteral("></div>\r\n            ");
             EndContext();
             BeginContext(640, 104, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "024cd7b5cdec4fb783366a11d54271de", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8cbfdb489274cbc9280bcabc97cb3c3", async() => {
                 BeginContext(724, 16, false);
 #line 16 "C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\Views\Post\Index.cshtml"
                                                                                           Write(Model.AuthorName);
@@ -235,7 +240,7 @@ WriteAttributeValue("", 595, Model.AuthorImageUrl, 595, 21, false);
             WriteLiteral("        <div class=\"row\">\r\n            <span>");
             EndContext();
             BeginContext(1297, 114, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9ba5983cd32441fcb64f3f6f8a2f57ea", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37f7ec3045a0489c84e170525a20adac", async() => {
                 BeginContext(1397, 10, true);
                 WriteLiteral("Post Reply");
                 EndContext();
@@ -304,7 +309,7 @@ WriteAttributeValue("", 1720, reply.AuthorImageUrl, 1720, 21, false);
             WriteLiteral("></div>\r\n                    ");
             EndContext();
             BeginContext(1772, 154, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c68b39ce92a54567aa20bfbd240411af", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad8aa712bca948f39d2baa783406b19b", async() => {
                 BeginContext(1857, 26, true);
                 WriteLiteral("\r\n                        ");
                 EndContext();

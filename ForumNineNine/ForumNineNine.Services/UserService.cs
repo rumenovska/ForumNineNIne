@@ -55,7 +55,7 @@ namespace ForumNineNine.Services
 
         public void Register(RegisterViewModel model)
         {
-            var user = new User { UserName = model.Email , MemberSince = DateTime.Now};
+            var user = new User { UserName = model.Email , MemberSince = DateTime.Now, ProfileImageUrl="/images/users/default-user.png" };
             var result = _userManager.CreateAsync(user, model.Password).Result;
             if (result.Succeeded)
             {
