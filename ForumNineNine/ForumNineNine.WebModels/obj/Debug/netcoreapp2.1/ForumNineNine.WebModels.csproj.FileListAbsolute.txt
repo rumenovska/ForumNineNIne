@@ -6,3 +6,4 @@ C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.WebModels\
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.WebModels\obj\Debug\netcoreapp2.1\ForumNineNine.WebModels.dll
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.WebModels\obj\Debug\netcoreapp2.1\ForumNineNine.WebModels.pdb
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.WebModels\obj\Debug\netcoreapp2.1\ForumNineNine.WebModels.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine.WebModels\obj\Debug\netcoreapp2.1\ForumNineNine.WebModels.csprojAssemblyReference.cache

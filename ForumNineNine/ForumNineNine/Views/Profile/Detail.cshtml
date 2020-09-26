@@ -11,14 +11,19 @@
             <div id="userProfileImage" style="background-image: url(@Model.ProfileImageUrl)"></div>
             @if (User.Identity.Name == Model.UserName)
             {
-                <form method="post" enctype="multipart/form-data" asp-controller="Profile" asp-action="UploadProfileImage">
-                    <div id="upload">
-                        <label class="btn btn-default btn-file photoUploader">
-                            <div id="browse">Browse</div> <input type="file" name="file" style="display: none" class="fileName" />
-                        </label>
-                    </div>
-                    <button type="submit" id="btn-profile" class="btn btn-default">Submit</button>
-                </form>
+        <form method="post" enctype="multipart/form-data" asp-controller="Profile" asp-action="UploadProfileImage">
+            @if (Model.ErrorMessage != null)
+            {
+                <div class="text-danger">@Model.ErrorMessage</div>
+            }
+            <div id="upload">
+
+                <label class="btn btn-default btn-file photoUploader">
+                    <div id="browse">Browse</div> <input type="file" name="file" style="display: none" class="fileName" />
+                </label>
+            </div>
+            <button type="submit" id="btn-profile" class="btn btn-default">Submit</button>
+        </form>
             }
         </div>
         <div class="col-md-8">

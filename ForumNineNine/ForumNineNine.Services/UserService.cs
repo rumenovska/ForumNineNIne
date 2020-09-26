@@ -3,6 +3,7 @@ using ForumNineNine.DataAccess;
 using ForumNineNine.DataAccess.DomainModels;
 using ForumNineNine.DataAccess.Interfaces;
 using ForumNineNine.WebModels.AccountViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -39,13 +40,10 @@ namespace ForumNineNine.Services
             throw new NotImplementedException();
         }
 
-        public void Login(LoginViewModel model)
+        public SignInResult Login(LoginViewModel model)
         {
             var result = _signInManager.PasswordSignInAsync(model.Username, model.Password, false, false).Result;
-            if (result.IsNotAllowed)
-            {
-                throw new Exception("Username od password is not correct");
-            }
+            return result;
         }
 
         public void Logout()
@@ -55,24 +53,28 @@ namespace ForumNineNine.Services
 
         public void Register(RegisterViewModel model)
         {
-            var user = new User { UserName = model.Email , MemberSince = DateTime.Now, ProfileImageUrl="/images/users/default-user.png" };
+            var user = new User { 
+                UserName = model.Username,
+                Email= model.Email,
+                MemberSince = DateTime.Now,
+                ProfileImageUrl="/images/users/default-user.png"
+            };
             var result = _userManager.CreateAsync(user, model.Password).Result;
             if (result.Succeeded)
             {
                 Login(new LoginViewModel
                 {
-                    Username= model.Email,
+                    Username= model.Username,
                     Password= model.Password
                 });
             }
         }
 
-        public async Task SetProfileImage(string userId, Uri uri)
+        public int SetProfileImage(User user, string filename)
         {
-            var user = _userManager.FindByIdAsync(userId).Result;
-            user.ProfileImageUrl = uri.AbsoluteUri;
-            _context.Update(user);
-            await _context.SaveChangesAsync();
+            user.ProfileImageUrl = $"/images/users/{filename}";
+            _context.Users.Update(user);
+            return _context.SaveChanges();
         }
     }
 }

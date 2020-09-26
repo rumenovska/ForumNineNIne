@@ -1,5 +1,7 @@
 ﻿using ForumNineNine.DataAccess.DomainModels;
 using ForumNineNine.WebModels.AccountViewModels;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,12 +12,12 @@ namespace ForumNineNine.DataAccess.Interfaces
     public interface IUserService
     {
         void Register(RegisterViewModel model);
-        void Login(LoginViewModel model);
+        SignInResult Login(LoginViewModel model);
         void Logout();
         User GetById(string userId);
         IEnumerable<User> GetAll();
 
-        Task SetProfileImage(string userId, Uri uri);
+        int SetProfileImage(User user, string filename);
         Task IncrementRating(string userId, Type type);
 
 

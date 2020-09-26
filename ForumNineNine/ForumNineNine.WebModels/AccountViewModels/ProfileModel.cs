@@ -12,6 +12,7 @@ namespace ForumNineNine.WebModels.AccountViewModels
         public string UserName { get; set; }
         public string UserRating { get; set; }
         public string ProfileImageUrl { get; set; }
+        public string ErrorMassage { get; set; }
         public bool IsAdmin { get; set; }
         public DateTime MemeberSince { get; set; }
         public IFormFile  ImageUpload { get; set; }

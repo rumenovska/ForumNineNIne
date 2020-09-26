@@ -14,7 +14,8 @@ namespace ForumNineNine.Controllers
     public class AccountController : Controller
     {
         private readonly IUserService _userService;
-        public AccountController(IUserService userService)
+
+        public AccountController(IUserService userService, SignInManager<User> signInManager)
         {
             _userService = userService;
         }
@@ -27,8 +28,16 @@ namespace ForumNineNine.Controllers
         {
             if (ModelState.IsValid)
             {
-                _userService.Login(model);
-                return RedirectToAction("Index", "Home");
+
+                if (_userService.Login(model).Succeeded)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Username or Password is incorrect!");
+                }
+
             }
             return View(model);
         }

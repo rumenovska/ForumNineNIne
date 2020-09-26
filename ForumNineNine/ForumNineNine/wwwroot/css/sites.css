@@ -307,11 +307,13 @@ body {
     width: 200px;
     background-color: #4FC3F7;
     transition: ease 0.3s;
+    overflow: hidden;
 }
 
     .btn-file:hover {
         background-color: #039BE5;
         transition: ease 0.3s;
+        
     }
 
 .btn-newPost {
