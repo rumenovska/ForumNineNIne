@@ -5,8 +5,10 @@ using ForumNineNine.DataAccess.Interfaces;
 using ForumNineNine.WebModels.AccountViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Pages.Internal.Account.Manage;
 using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,9 +37,22 @@ namespace ForumNineNine.Services
             throw new NotImplementedException();
         }
 
-        public Task IncrementRating(string userId, Type type)
+        public int IncrementRating(string userId, Type type)
         {
-            throw new NotImplementedException();
+            var user = _userManager.FindByIdAsync(userId).Result;
+            var newUserRating = 0;
+
+            if(type == typeof(Post))
+            {
+                newUserRating = 1;
+            }
+            if(type == typeof(PostReply))
+            {
+                newUserRating = 3;
+            }
+            user.Rating += newUserRating;
+            _context.Users.Update(user);
+            return _context.SaveChanges();
         }
 
         public SignInResult Login(LoginViewModel model)
@@ -78,3 +93,4 @@ namespace ForumNineNine.Services
         }
     }
 }
+

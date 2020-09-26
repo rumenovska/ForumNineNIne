@@ -12,9 +12,9 @@
             @if (User.Identity.Name == Model.UserName)
             {
         <form method="post" enctype="multipart/form-data" asp-controller="Profile" asp-action="UploadProfileImage">
-            @if (Model.ErrorMessage != null)
+            @if (Model.ErrorMassage != null)
             {
-                <div class="text-danger">@Model.ErrorMessage</div>
+                <div class="text-danger">@Model.ErrorMassage</div>
             }
             <div id="upload">
 

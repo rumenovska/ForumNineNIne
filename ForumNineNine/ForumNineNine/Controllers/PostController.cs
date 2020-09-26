@@ -16,11 +16,13 @@ namespace ForumNineNine.Controllers
         private readonly IPost _postService;
         private readonly IForum _forumService;
         private readonly UserManager<User> _userManager;
-        public PostController(IPost postService, IForum forumService, UserManager<User> userManager)
+        private readonly IUserService _userService;
+        public PostController(IPost postService, IForum forumService, UserManager<User> userManager, IUserService userService)
         {
             _postService = postService;
             _forumService = forumService;
             _userManager = userManager;
+            _userService = userService;
         }
         public IActionResult Index(int postId)
         {
@@ -56,7 +58,7 @@ namespace ForumNineNine.Controllers
             return View(newPostViewModel);
         }
         [HttpPost]
-        public async Task<IActionResult> Create(NewPostViewModel model)
+        public IActionResult Create(NewPostViewModel model)
         {
             var user = _userManager.FindByNameAsync(model.AuthorName).Result;
             var forum = _forumService.GetById(model.ForumId);
@@ -70,6 +72,7 @@ namespace ForumNineNine.Controllers
             };
 
             _postService.Add(post).Wait();
+            _userService.IncrementRating(user.Id, typeof(Post));
             return RedirectToAction("Index", "Post", new {postId= post.Id });
         }
         private IEnumerable<PostReplyVIewModel> RepliesMapper(IEnumerable<PostReply> replies)

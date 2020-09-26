@@ -18,5 +18,6 @@ namespace ForumNineNine.DataAccess.Interfaces
         Task EditPostContent(int id, string newContent);
         IEnumerable<Post> GetSearchedPosts(Forum forum, string searchQuery);
         IEnumerable<Post> FromAllSearchedPosts(string searchQuery);
+        int AddReply(PostReply postReply);
     }
 }

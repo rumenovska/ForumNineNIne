@@ -78,5 +78,11 @@ namespace ForumNineNine.Services
             return string.IsNullOrEmpty(searchQuery) ? forum.Posts
                 : forum.Posts.Where(post => post.Title.Contains(searchQuery) || post.Content.Contains(searchQuery));
         }
+
+        public int AddReply(PostReply postReply)
+        {
+            _context.Replies.Add(postReply);
+            return _context.SaveChanges();
+        }
     }
 }

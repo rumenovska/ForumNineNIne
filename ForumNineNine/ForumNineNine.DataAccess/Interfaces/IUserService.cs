@@ -16,9 +16,8 @@ namespace ForumNineNine.DataAccess.Interfaces
         void Logout();
         User GetById(string userId);
         IEnumerable<User> GetAll();
-
         int SetProfileImage(User user, string filename);
-        Task IncrementRating(string userId, Type type);
+        int IncrementRating(string userId, Type type);
 
 
     }
