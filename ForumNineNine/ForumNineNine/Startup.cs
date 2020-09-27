@@ -52,7 +52,7 @@ namespace ForumNineNine
             services.AddTransient<IForum, ForumService>();
             services.AddTransient<IPost, PostService>();
             services.AddTransient<IUserService, UserService>();
-            services.AddTransient<IUploader, UploaderService>();
+            
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

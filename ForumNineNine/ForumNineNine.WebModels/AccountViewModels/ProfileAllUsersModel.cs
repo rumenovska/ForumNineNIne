@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ForumNineNine.WebModels.AccountViewModels
 {
-    public class ProfileDetailModel
+    public class ProfileAllUsersModel
     {
-        public IEnumerable<ProfileModel> Profiles { get; set; }
+        public IEnumerable<ProfileViewModel> Profiles { get; set; }
     }
 }

@@ -37,7 +37,7 @@ namespace ForumNineNine.Controllers
                 AuthorName = user.UserName,
                 AuthorRating = user.Rating,
                 AuthorImageUrl = user.ProfileImageUrl,
-                IsAuthorAdmin = User.IsInRole("admin"),
+                IsAuthorAdmin = _userManager.GetRolesAsync(post.User).Result.Contains("admin"),
                 
                 ForumId= post.Forum.Id,
                 ForumImageUrl = post.Forum.ImageUrl,

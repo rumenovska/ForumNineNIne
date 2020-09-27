@@ -16,9 +16,10 @@ namespace ForumNineNine.Services
         {
             _context = context;
         }
-        public Task Create(Forum forum)
+        public int Create(Forum forum)
         {
-            throw new NotImplementedException();
+            _context.Add(forum);
+            return _context.SaveChanges();
         }
 
         public Task Delete(int forumId)
@@ -29,7 +30,8 @@ namespace ForumNineNine.Services
         public IEnumerable<Forum> GetAll()
         {
             return _context.Forums
-                .Include(f => f.Posts);
+                .Include(f => f.Posts)
+                .Include(f => f.User);
         }
 
         public IEnumerable<User> GetAllActiveUsers()
@@ -40,6 +42,7 @@ namespace ForumNineNine.Services
         public Forum GetById(int id)
         {
             return _context.Forums.Where(p=> p.Id == id)
+                .Include(f=> f.User)
                 .Include(f=> f.Posts)
                    .ThenInclude(p=> p.User)
                 .Include(f => f.Posts)

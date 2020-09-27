@@ -41,7 +41,7 @@ namespace ForumNineNine.Controllers
                 Replies = replies,
                 ForumName = post.Forum.Title,
                 ForumId = post.Forum.Id,
-                IsAuthorAdmin = _userManager.GetRolesAsync(post.User).Result.Contains("Admin")
+                IsAuthorAdmin = _userManager.GetRolesAsync(post.User).Result.Contains("admin")
             };
             return View(model);
         }
@@ -86,7 +86,7 @@ namespace ForumNineNine.Controllers
                 AuthorRating = r.User.Rating,
                 Created = r.Created,
                 ReplyContent= r.Content,
-                IsAuthorAdmin= _userManager.GetRolesAsync(r.User).Result.Contains("Admin")
+                IsAuthorAdmin= _userManager.GetRolesAsync(r.User).Result.Contains("admin")
             });
         }
     }

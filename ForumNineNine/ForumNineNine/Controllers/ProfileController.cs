@@ -17,23 +17,40 @@ namespace ForumNineNine.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly IUserService _userService;
-        private readonly IUploader _uploader;
+   
         private readonly IHostingEnvironment _hostingEnvironment;
 
-        public ProfileController(UserManager<User> userManager, IUserService userService, IUploader uploader, IHostingEnvironment hostingEnvironment)
+        public ProfileController(UserManager<User> userManager, IUserService userService, IHostingEnvironment hostingEnvironment)
         {
             _userManager = userManager;
             _userService = userService;
-            _uploader = uploader;
             _hostingEnvironment = hostingEnvironment;
 
         }
 
+        public IActionResult AllUsers()
+        {
+            var users = _userService.GetAll()
+                .OrderByDescending(u => u.Rating)
+                .Select(u => new ProfileViewModel
+                {
+                    Email= u.Email,
+                    UserName= u.UserName,
+                    UserRating = u.Rating.ToString(),
+                    MemeberSince = u.MemberSince,
+                    ProfileImageUrl= u.ProfileImageUrl
+                });
+            var model = new ProfileAllUsersModel
+            {
+                Profiles = users
+            };
+            return View(model);
+        }
         public IActionResult Detail(string userId, string errorMassage = null)
         {
             var user = _userManager.FindByIdAsync(userId).Result;
 
-            var model = new ProfileModel
+            var model = new ProfileViewModel
             {
                 UserId = user.Id,
                 UserName = user.UserName,

@@ -50,6 +50,10 @@ namespace ForumNineNine.Services
             {
                 newUserRating = 3;
             }
+            if(type == typeof(Forum))
+            {
+                newUserRating = 1;
+            }
             user.Rating += newUserRating;
             _context.Users.Update(user);
             return _context.SaveChanges();

@@ -13,7 +13,6 @@ namespace ForumNineNine.DataAccess.DomainModels
 
         public virtual User User { get; set; }
         public virtual Forum Forum { get; set; }
-
         public virtual IEnumerable<PostReply> Replies { get; set; }
     }
 }

@@ -51,5 +51,6 @@ C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Search\Results.cshtml.g.cs
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Profile\Detail.cshtml.g.cs
-C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Profile\Index.cshtml.g.cs
 C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Reply\Create.cshtml.g.cs
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Forum\Create.cshtml.g.cs
+C:\Users\User\Desktop\repos\ForumNineNIne\ForumNineNine\ForumNineNine\obj\Debug\netcoreapp2.1\Razor\Views\Profile\AllUsers.cshtml.g.cs

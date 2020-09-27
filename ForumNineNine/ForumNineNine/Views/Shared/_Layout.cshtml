@@ -27,7 +27,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-controller="Forum" asp-action="Index">Forums</a></li>
+                    <li><a asp-controller="Forum" asp-action="Index">Forum Topics</a></li>
                 </ul>
                 @if (User.Identity.IsAuthenticated)
                 {
@@ -45,7 +45,7 @@
                                  {
                                      <li role="separator" class="divider"></li>
                                      <li class="dropdown-header">Admin</li>
-                                     <li><a asp-controller="Profile" asp-action="Index">All Users</a></li>
+                                     <li><a asp-controller="Profile" asp-action="AllUsers">All Users</a></li>
                                  }
                             </ul>
                         </li>
@@ -68,10 +68,7 @@
 
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2020 - ForumNineNine</p>
-        </footer>
+       
     </div>
 
     <environment include="Development">

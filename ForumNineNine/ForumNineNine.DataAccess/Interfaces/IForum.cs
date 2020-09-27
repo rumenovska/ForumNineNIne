@@ -12,7 +12,7 @@ namespace ForumNineNine.DataAccess.Interfaces
         IEnumerable<Forum> GetAll();
         IEnumerable<User> GetAllActiveUsers();
 
-        Task Create(Forum forum);
+        int Create(Forum forum);
         Task Delete(int forumId);
         Task UpdateForumTitle(int forumId, string newTitle);
         Task UpdateForumDescription(int forumId, string newDesc);

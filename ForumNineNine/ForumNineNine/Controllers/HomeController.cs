@@ -24,8 +24,8 @@ namespace ForumNineNine.Controllers
 
         public IActionResult Index()
         {
-            var latestPosts = _postService.GetLatestPosts(10);
-            var latestForums = _forumService.GetLatestForums(10);
+            var latestPosts = _postService.GetLatestPosts(5);
+            var latestForums = _forumService.GetLatestForums(5);
             var latestPostsMapped = latestPosts.Select(p => new PostViewModel
             {
                 Id = p.Id,
@@ -48,7 +48,9 @@ namespace ForumNineNine.Controllers
                 Id = f.Id,
                 Name = f.Title,
                 Description = f.Description,
-                PostsCount = f.Posts.Count()
+                PostsCount = f.Posts.Count(),
+                UserName = f.User.UserName,
+                UserId = f.User.Id
             });
 
             var model = new ForumIndexModel

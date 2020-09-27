@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ForumNineNine.WebModels.AccountViewModels
 {
-    public class ProfileModel
+    public class ProfileViewModel
     {
         public string UserId { get; set; }
         public string Email { get; set; }

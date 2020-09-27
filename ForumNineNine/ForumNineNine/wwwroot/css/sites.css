@@ -30,7 +30,6 @@ body {
     font-size: 1.3em;
     font-family: Roboto;
     padding: 16px 0 16px 0;
-    border-bottom: 1px solid #335;
     margin-bottom: 12px;
 }
 .postHeading{
@@ -208,6 +207,40 @@ body {
     text-align: center;
     padding-top: 30px;
     font-family: Roboto;
+}
+/*Replies Style*/
+.replyContent {
+    display: table;
+    background-color: #fff;
+    border-bottom: 1px solid #aaa;
+    width: 99%;
+    padding-top: 5px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.replyContentContainer, .replyAuthorContainer {
+    display: table-cell;
+    padding-right: 0px;
+}
+
+.isAdmin{
+    display: inline-block;
+    padding: 3px;
+    background-color: #FFEB3B;
+    color: #000;
+    font-family: Roboto Mono;
+}
+.smaller{
+    font-size: 0.9em;
+}
+#postReplyRow {
+    padding: 10px 5px 30px 7px;
+}
+#originalPost{
+    background-color: #fff;
+    padding: 12px;
+    border-bottom: 1px solid black;
 }
 /*User Profile*/
 .userProfile{
